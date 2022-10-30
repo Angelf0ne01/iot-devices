@@ -1,9 +1,15 @@
 #include <Arduino.h>
+#include "./../lib/example_lib.h"
 
-void setup() {
-  // put your setup code here, to run once:
+ExampleLib *example = new ExampleLib();
+
+void setup()
+{
+  Serial.begin(9600);
+  Serial.println(example->printTest());
 }
 
-void loop() {
+void loop()
+{
   // put your main code here, to run repeatedly:
 }
