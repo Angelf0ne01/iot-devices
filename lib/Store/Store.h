@@ -1,6 +1,6 @@
 class Store {
   private:
-    Preferences preference; 
+    Preferences preference = new Preferences(); 
   public:
     void setDataInt(String key,int value);
     void setDataFloat(String key,float value);
