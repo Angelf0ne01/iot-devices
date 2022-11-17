@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <Preferences.h>
+// no se si va con comillas
 
 class Store {
   private:
