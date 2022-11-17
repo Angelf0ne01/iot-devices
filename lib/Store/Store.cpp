@@ -1,32 +1,32 @@
 #include "Store.h"
 
-Store::setDataInt(String key,int value){
-  this->preferences->putInt(key,value);
+void Store::setDataInt(String setKeyInt,int valueInt){
+  this->preferences.putInt(setKeyInt.c_str(),valueInt);
 }
 
-Store::setDataFloat(String key,float value){
-  this->preferences->putFloat(key,value);
+void Store::setDataFloat(String setKeyFloat,float valueFloat){
+  this->preferences.putFloat(setKeyFloat.c_str(),valueFloat);
 }
-Store::setDataString(String key,int value){
-  this->preferences->putString(key,value);
-}
-
-Store::setDataBool(String key,float value){
-  this->preferences->putBool(key,value);
+void Store::setDataString(String setKeyString,String valueString){
+  this->preferences.putString(setKeyString.c_str(),valueString);
 }
 
-Store::getDataInt(String key){
-  this->preferences->getInt(key);
+void Store::setDataBool(String setKeyBool,bool valueBool){
+  this->preferences.putBool(setKeyBool.c_str(),valueBool);
 }
 
-Store::getDataFloat(String key){
-  this->preferences->getFloat(key);
+int Store::getDataInt(String getKeyInt){
+  return this->preferences.getInt(getKeyInt.c_str());
 }
 
-Store::getDataString(String key){
-  this->preferences->getString(key);
+float Store::getDataFloat(String getKeyFloat){
+  return this->preferences.getFloat(getKeyFloat.c_str());
 }
 
-Store::getDataBool(String key){
-  this->preferences->getBool(key);
+String Store::getDataString(String getKeyString){
+  return this->preferences.getString(getKeyString.c_str());
+}
+
+bool Store::getDataBool(String getKeyBool){
+  return this->preferences.getBool(getKeyBool.c_str());
 }

@@ -1,13 +1,16 @@
+#include <Arduino.h>
+#include <Preferences.h>
+
 class Store {
   private:
-    Preferences preference = new Preferences(); 
+    Preferences preferences; 
   public:
-    void setDataInt(String key,int value);
-    void setDataFloat(String key,float value);
-    void setDataString(String key,String value);
-    void setDataBool(String key,bool value);
-    int getDataInt(String key);
-    float getDataFloat(String key);
-    String getDataString(String key);
-    bool getDataBool(String key);
-}
+    void setDataInt(String setKeyInt,int valueInt);
+    void setDataFloat(String setKeyFloat,float valueFloat);
+    void setDataString(String setKeyString,String valueString);
+    void setDataBool(String setKeyBool,bool valueBool);
+    int getDataInt(String getKeyInt);
+    float getDataFloat(String getKeyFloat);
+    String getDataString(String getKeyString);
+    bool getDataBool(String getKeyBool);
+};
