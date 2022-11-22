@@ -1,4 +1,8 @@
+#include "Arduino.h"
 #include "localDataBase.h"
+
+
+
 
 wifiCredentials::wifiCredentials()
 {
@@ -7,24 +11,25 @@ wifiCredentials::wifiCredentials()
 
 void wifiCredentials::setSsid(Stirng ssid)
 {
-    store->setDataString("ssid", ssid);
-    return;
+    store->setDataString(SSID, ssid);
+    
 }
 
 void wifiCredentials::setPws(String pw)
 {
-    store->setDataString("pws",pw );
-    return;
+    store->setDataString(PWS, pw);
+    
 }
 
 String wifiCredentials::getSsid()
 {
-    store->getData("ssid");
-    return;
+     return store->getData(SSID);
+        
+    
 }
 
 String wifiCredentials::getPsw()
 {
-    store->getData("pws");
-    return;
+    return store->getData(PWS);
+    
 }
