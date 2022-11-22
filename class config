@@ -1,0 +1,18 @@
+class config{
+    Type type 
+
+    config(){
+
+        type=new Type();
+
+    }
+
+    void setType(char* value){
+
+    type->setType()
+    }
+    string getType(){
+        type->getType();
+    }
+ }
+ 
