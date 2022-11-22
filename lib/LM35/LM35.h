@@ -1,10 +1,10 @@
 #ifndef LM35.h
 #include "Arduino.h"
 
-class lm35
+class LM35
 {
   public:
-    lm35(int pin);
+    LM35(int pin);
     String getValue();
   private:
     int _pinlm35;
