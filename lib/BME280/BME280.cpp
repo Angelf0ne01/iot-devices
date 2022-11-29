@@ -14,19 +14,14 @@ class BME280{
     pin_22 = nuevo_pin_2;
     }
     
-    String getValue(){
+    String BME280::getValue(){
       
-      Presion(){
        Serial.print ("/t Presion: ");
        Serial.print (Presion);
        Serial.println (" hPa");
-    }
-      return Presion;
+       return String (" hPa");
       }
 
-      BME280 Sensor_presion1 = new BME280 (pin_21, pin_22);
-      BME280 Sensor_presion2 = new BME280 (pin_21, pin_22);
-      BME280 Sensor_presion3 = new BME280 (pin_21, pin_22);
   };
 
   #endif
