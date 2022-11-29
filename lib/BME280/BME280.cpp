@@ -16,9 +16,9 @@ class BME280{
     
     String BME280::getValue(){
       
-       Serial.print ("/t Presion: ");
-       Serial.print (Presion);
-       Serial.println (" hPa");
+       float ("/t Presion: ");
+       float (Presion);
+       float (" hPa");
        return String (" hPa");
       }
 
