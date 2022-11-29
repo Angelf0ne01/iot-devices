@@ -6,6 +6,8 @@ class wifiCredentials
     private:
 String wifiSsid;
 String wifiPsw;
+const char* SSID = "ssid";
+const char* PWS = "pws";
 Store *store; 
 
     public:
