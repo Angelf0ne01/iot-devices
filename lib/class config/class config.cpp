@@ -8,7 +8,7 @@ String config: :getType(){
 }
 
 void config: :setType(){
-    return  type->setType();
+    type->setType();
 }
 
 class config{
@@ -18,10 +18,11 @@ class config{
     }
 
     void setType(char* value){
-        type->setType()
+        type->setType();
 
     }
     String getType{
         type->getType();   
+        return type;
     }
 };
